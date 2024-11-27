@@ -1,5 +1,4 @@
-use std::env;
-use std::process;
+use std::{env, process};
 
 mod tcp_client;
 mod tcp_server;
