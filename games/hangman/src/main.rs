@@ -67,16 +67,17 @@ fn process_guess(character: char, secret_word: &str, alphabet_vec: &mut Vec<char
 }
 
 fn is_hanged(tries: u8, alphabet_vec: &Vec<char>) {
-    if tries >= MAX_ERRORS {
+    if tries == MAX_ERRORS {
         println!("\nYou hanged, try again!");
         process::exit(0);
     }
 
     if SECRET_WORD.chars().all(|c| alphabet_vec.contains(&c)) {
-        println!("\nYou won! The Secret word was FLOPPA");
+        println!("\nYou won! The Secret word was \x66\x6c\x6f\x70\x70\x61");
         process::exit(0);
     }
 }
+
 fn main() {
     banner();
     let mut alphabet_vec: Vec<char> = Vec::new();
