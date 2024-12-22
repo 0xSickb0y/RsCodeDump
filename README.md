@@ -6,5 +6,5 @@ Personal repository dedicated to organizing RUST source code, experiments, and c
 
 #### 1. [Network Programming](https://github.com/0xSickb0y/RsCodeDump/tree/main/rustnet)
 #### 2. [Rust Book Studies](https://github.com/0xSickb0y/RsCodeDump/tree/main/studies)
-#### 3. [Rustlings Exervices](https://github.com/0xSickb0y/RsCodeDump/tree/main/rustlings)
+#### 3. [Rustlings Exercices](https://github.com/0xSickb0y/RsCodeDump/tree/main/rustlings)
 #### 4. [Mini Games](https://github.com/0xSickb0y/RsCodeDump/tree/main/games)
