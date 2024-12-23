@@ -37,9 +37,9 @@ fn take_and_give_back(a_string: String) -> String { // a_string comes into scope
 A reference is like a pointer in that it’s an address we can follow to access the data stored at that address; that data is owned by some other variable. 
 Unlike a pointer, a reference is guaranteed to point to a valid value of a particular type for the life of that reference.
 */
-fn calculate_lenght(d: &String) -> usize { // the signature of the function uses & to indicate that the type of the parameter s is a reference.
+fn calculate_lenght(d: &String) -> usize { // the signature of the function uses & to indicate that the type of the parameter d is a reference.
     return d.len();
-} // Here, s goes out of scope. But because it does not have ownership of what it refers to, it is not dropped.
+} // Here, d goes out of scope. But because it does not have ownership of what it refers to, it is not dropped.
 
 fn data_clone() {
     let s1 = String::from("Clone");
@@ -78,21 +78,21 @@ fn main() {              // s is not valid here, it’s not yet declared
     data_clone();
     data_move();
 
-    let x = String::from("Take ownership"); // s comes into scope
+    let x = String::from("Take ownership"); // x comes into scope
     let i = 5; // i comes into scope
 
-    take_ownsership(x); // s's value moves into the function
+    take_ownsership(x); // x's value moves into the function
                        // and so is no longer valid here
                        
-    make_copy(i);       // x would move into the function, but i32 is Copy
-    println!("{}", i); // so it's okay to still use x afterward
+    make_copy(i);       // i would move into the function, but i32 is Copy
+    println!("{}", i); // so it's okay to still use i afterward
 
-    let _a = give_ownership(); // give_ownsership moves its return value into a
+    let _a = give_ownership(); // give_ownership moves its return value into a
     let b = String::from("a_string");
     let _c = take_and_give_back(b); // b is moved into take_and_give_back, which also moves its return value into c
 
     let d = String::from("References");
-    let d_len = calculate_lenght(&d); // The &d syntax lets us create a reference that refers to the value of s1 but does not own it. 
+    let d_len = calculate_lenght(&d); // The &d syntax lets us create a reference that refers to the value of d but does not own it. 
 
     println!("The lenght of {} is {}", d, d_len);
 
