@@ -10,7 +10,7 @@ Implementation and testing of network functionality in rust.
 
 ## 2. [Rust Book Studies](https://github.com/0xSickb0y/RsCodeDump/tree/main/studies)
 
-Studies and source code built upon the book [The rust programming language](https://doc.rust-lang.org/book/)
+Studies and source code based on the book [The rust programming language](https://doc.rust-lang.org/book/)
 
 ## 3. [Rustlings Exercices](https://github.com/0xSickb0y/RsCodeDump/tree/main/rustlings)
 
