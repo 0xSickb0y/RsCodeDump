@@ -17,7 +17,3 @@ Welcome to **RsCodeDump**, a personal repository designed to organize, showcase,
 
 4. **[Mini Games](https://github.com/0xSickb0y/RsCodeDump/tree/main/games)**  
    A collection of **mini games** built using Rust. These games are simple terminal-based projects, they demonstrate basic Rust features, including game logic and user input handling, but aren't complex by any means.
-
-## Contributing
-
-Feel free to open issues or create pull requests. Contributions are always welcome! If you have suggestions, bug fixes, or would like to add new projects, please submit a pull request, and I’ll review it as soon as possible.
