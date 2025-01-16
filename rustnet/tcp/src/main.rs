@@ -7,8 +7,8 @@ mod server;
 fn print_help_exit() {
     eprintln!("Usage:");
 
-    eprintln!("  tcp server <bind-address> <port>");
-    eprintln!("  tcp client <server-address> <port>");
+    eprintln!("  ./tcp server <bind-address> <port>");
+    eprintln!("  ./tcp client <server-address> <port>");
     eprintln!();
     eprintln!("  cargo run server <bind-address> <port>");
     eprintln!("  cargo run client <server-address> <port>");
